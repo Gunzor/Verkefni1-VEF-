@@ -1,0 +1,57 @@
+thead{
+    background: gray;
+}
+
+tbody{
+    background: lightcoral;
+}
+
+td{
+    padding: 0px 16px;
+    
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border: 1px solid;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    
+    table thead {
+      display: none;
+    }
+    
+    tr {
+    
+      display: block;
+      
+    }
+    
+    table td {
+      border-bottom: 1px solid;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  

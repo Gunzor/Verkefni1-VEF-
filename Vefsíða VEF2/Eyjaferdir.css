@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 
 img{
     max-width: 100%;
@@ -61,6 +64,114 @@ body{
     text-align: center;
     
     }
+
+.ludan{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/*Talflan*/
+
+    thead{
+        background: rgb(248, 227, 164);
+        font-size: 18px;
+        
+    }
+    
+    tbody{
+        background: rgb(149, 204, 221);
+    }
+    
+    td{
+        padding: 0px 16px;
+        
+        text-align: center;
+    }
+    
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    tr{
+        border: 1px solid;
+    }
+
+
+    /*Formið*/
+
+    form{
+        padding: 20px;
+        border: 1px solid;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    label{
+        font-weight: bold;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    input{
+        background: rgb(230, 217, 217);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .ferd{
+        background: rgb(230, 217, 217);
+    }
+
+    textarea{
+        background: rgb(230, 217, 217);
+    }
+
+    .plass{
+        margin: 10px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+
+    .skra{
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    
+    @media screen and (max-width: 37.5em) {
+        
+        
+        table thead {
+          display: none;
+        }
+        
+        tr {
+        
+          display: block;
+          
+        }
+        
+        table td {
+          border-bottom: 1px solid;
+          display: block;
+          font-size: .8em;
+          text-align: right;
+        }
+        
+        table td::before {
+          
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          
+        }
+        
+        table td:last-child {
+          border-bottom: 0;
+        }
+      }
 
 
 @media screen and (min-width:37.5em){

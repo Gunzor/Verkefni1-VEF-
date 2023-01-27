@@ -27,7 +27,7 @@
             <img src="Eyjarnar480.png">
         </picture> 
     </header>
-    <section class="rodun">
+    <section class="rodun ludan">
         <div>
             <source media="(min-width:960px)" srcset="Fiskur1.png" class="center">
             <img src="Fiskur480.png" alt="">
@@ -38,7 +38,55 @@
                 </p>
         </div>
     </section>
-    <section class="rodun">
+
+<!--Taflan-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nafn</th>
+                    <th>Starfsheiti</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Nafn">Guðni Geir</td>
+                    <td data-label="Starfsheiti">Eigandi</td>
+                    <td data-label="Email">gudnieir@gmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Bergljót Sif</td>
+                    <td data-label="Starfsheiti">Háseti</td>
+                    <td data-label="Email">beggas@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Daníel Galvez</td>
+                    <td data-label="Starfsheiti">Bókari</td>
+                    <td data-label="Email">dannig@gmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Embla Rós</td>
+                    <td data-label="Starfsheiti">Skipsstjóri</td>
+                    <td data-label="Email">emblaR@gmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Einar Daði</td>
+                    <td data-label="Starfsheiti">Skipsstjóri</td>
+                    <td data-label="Email">einarinn@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Eva Björk</td>
+                    <td data-label="Starfsheiti">Vélfræðingur</td>
+                    <td data-label="Email">ebv@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+    
+    <section class="rodun ludan">
         <div>
             <source media="(min-width:960px)" srcset="Storluda480.png" class="center">
             <img src="Storluda250.png" alt="">
@@ -47,6 +95,48 @@
              <p class="leturval">Stærsti fiskurinn sem hefur verið veiddur í ferðunum okkar er 100kg lúða. Lúðan var veidd við Elliðarey og var bardaginn við þessa lúðu í tvær klst. Lúðan getur orðið gríðalega stór og stæðsta lúða sem hefur verið veidd var um það bil 240 kg. Þetta er gríðalega fallegur fiskur og skemmtilegur í veiði þar sem Lúðan er gríðalega öflug og gefur öllum veiðifólki skemmtilegan bardaga. Lúðan er botnfiskur og hún heldur sig stundum við eyjarnar í kringum heimaey þar sem hún bíður eftir eggjum sem detta í sjóinn. </p>
         </div>
     </section>
+
+    <form action="">
+        <label for="">Nafn:</label>
+        <input type="text" required>
+       
+        <label for="">Sími:</label>
+        <input type="number" required>
+       
+
+        <label for="">Netfang:</label>
+        <input type="email" required><br>
+
+        <label for="">Veldu Ferð</label><br>
+        <select class="ferd">
+            <option value="">Kvöld</option>
+            <option value="">Snemma dags</option>
+            <option value="">Miðdags</option>
+        </select><br>
+
+        <label for="">Dagsetning Ferðar</label><br>
+        <input type="date" required><br>
+
+
+        <div class="plass">
+            <label for="">Búnaður</label><br>
+            <input type="checkbox" checked>Beitufiskur
+            <input type="checkbox">Önglar/sökkvur<br>
+        </div>
+        <div class="plass">
+            <label for="">Tegund ferðar:</label>
+            <input type="radio" name="land">StórÞorskur
+            <input type="radio" name="land">Lúða
+            <input type="radio" name="land">Alsskonar <br>
+        </div>   
+        <div class="plass">
+            <label for="">Nánari lýsing</label><br>
+            <textarea></textarea><br>
+        </div>
+            
+            <input type="submit" value="skrá" class="skra"><br>
+
+    </form>
     <footer class="fotur">
         <nav>
           <h4>Contact</h4>
