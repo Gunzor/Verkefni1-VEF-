@@ -11,13 +11,15 @@
     <header>
         
             <section class="efnis2">
-                <label class="burger">&#9776;</label>
-                <nav class="efnisy">
-                    
-                    <a href="">Um Okkur</a>
-                    <a href="">Bátarnir</a>
-                    <a href="">Ferðir</a>
-                    <a href="">Fisktegundir</a>
+                <input class="cbox" type="checkbox" id="smellur">
+                <label class="burger" for="smellur">&#9776;</label>
+                <nav class="">
+                    <ul class="efnisy">
+                        <li><a href="#vid">Um Okkur</a></li>
+                       <li><a href="https://www.mbl.is/200milur/skipaskra/skip/7096/">Báturinn</a></li>
+                       <li><a href="#ferd">Ferðir</a></li>
+                       <li><a href="https://www.sjavarlif.is/fiskar/">Fisktegundir</a></li>
+                    </ul>
                 </nav>
             </section>
         
@@ -28,14 +30,15 @@
         </picture> 
     </header>
     <section class="rodun ludan">
-        <div>
-            <source media="(min-width:960px)" srcset="Fiskur1.png" class="center">
-            <img src="Fiskur480.png" alt="">
-        </div>
+        
         <div>
             <p class="leturval">Ertu með gríðalegan áhuga fyrir veiðimennsku en átt ekki bát? Við hjá Eyjaferðum bjóðum uppá skemmtilega upplifun fyrir allan aldur í veiðimennsku. Við bjóðum uppá bæði einkaferðir og einnig skemmtilegar ferðir þar sem þú getur kynnst öðrum áhugasömu veiðifólki. Við bjóðum uppá veitingar og drykki í ferðum okkar.
                 Allskonar fisktegundir bjóðast í kringum eyjuna, að mestu leiti Þorskur en kemur einnig Lúða, Ufsi, Makríll og fleira. Við erum með reyndann skipsstjóra sem þekkjir alla bestu staðina í kringum eyjuna.
                 </p>
+        </div>
+        <div>
+            <source media="(min-width:960px)" srcset="Fiskur1.png" class="center">
+            <img src="Fiskur480.png" alt="">
         </div>
     </section>
 
@@ -96,7 +99,15 @@
         </div>
     </section>
 
-    <form action="">
+    <section id="vid">
+        <p class="leturval">Við hjá Eyjaferðum einblínum á það að gefa þér þýna bestu upplifun. Starfsfólk okkar er mjög kurteist og
+            alltaf tilbúið til þess að hjálpa og kenna. Eyjaferðir er nýtt fyrirtæki í Vestmannaeyjum þar sem er
+            farið með fólk á öllum aldri í veiðiferðir. Við bjóðum uppá allskonar ferðir sem ætti að henta sem flestum.
+            ef þú hefur áhuga hafðu samband.
+        </p>
+    </section>
+
+    <form action="" id="ferd">
         <label for="">Nafn:</label>
         <input type="text" required>
        
@@ -133,45 +144,62 @@
             <label for="">Nánari lýsing</label><br>
             <textarea></textarea><br>
         </div>
-            
+        <div>
             <input type="submit" value="skrá" class="skra"><br>
-
+        </div>
     </form>
+
+    <div class="box">
+        <a class="button" href="#popup1">1.2.3...GEORG</a>
+    </div>
+    
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>5 HÁSKÓLAGRÁÐUR</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <iframe width="560" height="315"src="https://www.youtube.com/embed/bmbZ868TeSc"frameborder="0" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+    </div>
+        
     <footer class="fotur">
-        <nav>
-          <h4>Contact</h4>
-          <dl class="litur">
-            <dt>Sími:</dt>
-              <dd>7733112</dd>
-            <dt>Mail:</dt>
-              <dd>gudnieir@gmail.com</dd>
-            <dt>Áfangi:</dt>
-              <dd>vefhönnun</dd>
-          </dl>
-  
-        </nav>
-        <nav>
-          <h4>Upplýsingar</h4>
-          <ul>
-            <a href=""><li>Fisktegudnir</li></a>
-            <a href=""><li>Bátarnir</li></a>
-            <a href=""><li>Ferðir</li></a>
-          </ul>
-        </nav>
-        <nav>
-          <h4>Fyrirtækið</h4>
-          <ul>   
-            <li>
-              <a href="" target="_blank">Eyjaferðir Ehf</a>
-            </li>
-            <li>
-              <a href="" target="_blank">Eigandi:</a> 
-            </li>
-            <li>
-                <a href="" target="_blank">Guðni Geir</a> 
-            </li>
-        </nav>
-      </footer>
+        <div>
+            <h4>Contact</h4>
+            <dl class="litur">
+              <dt>Sími:</dt>
+                <dd>7733112</dd>
+              <dt>Mail:</dt>
+                <dd>gudnieir@gmail.com</dd>
+              <dt>Áfangi:</dt>
+                <dd>vefhönnun</dd>
+            </dl>
+    
+        </div>
+          <div>
+            <h4>Upplýsingar</h4>
+            <ul>
+              <a href="https://www.sjavarlif.is/fiskar/"><li>Fisktegudnir</li></a>
+              <a href="https://www.mbl.is/200milur/skipaskra/skip/7096/"><li>Báturinn</li></a>
+              <a href="#ferd"><li>Ferðir</li></a>
+            </ul>
+          </div>
+          <div>
+            <h4>Fyrirtækið</h4>
+            <ul>   
+              <li>
+                <a href="" target="_blank">Eyjaferðir Ehf</a>
+              </li>
+              <li>
+                <a href="" target="_blank">Eigandi:</a> 
+              </li>
+              <li>
+                  <a href="" target="_blank">Guðni Geir</a> 
+              </li>
+            </div>
+        </footer>
+
       <center><p class="">&copy; 2023 Guðni Geir</p></center>
     <a href=" " class="arrow" title="Efst á síðu"> &#8679; </a>
 
