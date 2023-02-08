@@ -45,12 +45,19 @@ body{
     
 }
 
+.litur{
+    
+}
 
+.fiskur{
+    text-align: right;
+}
 
 .rodun{
     display: grid;
     grid-template-columns: 1fr;
 }
+
 
 .leturval{
     padding: 10px;
@@ -97,6 +104,12 @@ body{
     text-align: center;
     
     }
+
+svg{
+    position: absolute;
+    left: 150px;
+
+}
 
 .ludan{
     margin-top: 40px;

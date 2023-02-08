@@ -1,50 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="">
-        <label for="">Nafn:</label>
-        <input type="text" required><br>
-       
-        <label for="">Sími:</label>
-        <input type="number" required><br>
-       
-
-        <label for="">Netfang:</label>
-        <input type="email" required><br>
-
-        <label for="">Veldu Ferð</label><br>
-        <select>
-            <option value="">Kvöld</option>
-            <option value="">Snemma dags</option>
-            <option value="">Miðdags</option>
-        </select><br>
-
-        <label for="">Dagsetning Ferðar</label><br>
-        <input type="date" required><br>
-
-        <label for=""></label>Búnaður<br>
-        <input type="checkbox" checked>Beitufiskur<br>
-        <input type="checkbox">Önglar/sökkvur<br>
-
-
-        <label for="">Tegund ferðar</label><br>
-        <input type="radio" name="land">StórÞorskur<br>
-        <input type="radio" name="land">Lúða<br>
-        <input type="radio" name="land">Alsskonar<br>
-        
-
-        <label for="">Nánari lýsing</label><br>
-        <textarea></textarea><br>
-
-        
-        <input type="submit" value="skrá"><br>
-
-    </form>
-</body>
+<html>
+  <head>
+    <title>Einkaþjálfari - Síða</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Einkaþjálfari</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Um mig</a></li>
+          <li><a href="#services">Þjónusta</a></li>
+          <li><a href="#contact">Hafa samband</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>Um mig</h2>
+        <p>Ég er einkaþjálfari sem hefur átt mikinn reynslu í æfingastarfi. Ég hef þjálfað fólk á öllum aldri og stigum í lífi. Ég brenni fyrir því að hjálpa fólki að ná sín mörk og vera í bestu líkamanum.</p>
+      </section>
+      <section id="services">
+        <h2>Þjónusta</h2>
+        <ul>
+          <li>Einkaþjálfun</li>
+          <li>Æfingaplanlegging</li>
+          <li>Líkamsráðgjöf</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Hafa samband</h2>
+        <form action="">
+          <label for="name">Nafn:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Netfang:</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Skilaboð:</label>
+          <textarea id="message" name="message"></textarea>
+          <input type="submit" value="Senda">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Einkaþjálfari - Síða 2023</p>
+    </footer>
+  </body>
 </html>
