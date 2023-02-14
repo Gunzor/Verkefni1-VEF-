@@ -17,6 +17,7 @@ img{
     max-width: 100%;
 }
 
+
 a{
     text-decoration: none;
     color: darkblue;
@@ -35,9 +36,41 @@ nav{
     height: 100px;
 }
 
+.slideset2 { /*Þetta er klasi sem ræður staðsetningu slideshowsins og passar það að bara eitt sjáist í einu breytir font einnig*/
+    left: 22em;
+    height: 10em; 
+    position: relative;
+    overflow: hidden;
+    font-family: 'Itim', cursive;
+    }
+
+.slideset2 > div { /*Þessi klasi sér um að segja hversu lengi animation er, setur border, breytir bakgrunn og með pos abs sem heldur þessu á sýnum stað*/
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    animation: 12s autoplay2 infinite ease-in-out;
+    border:white solid;
+    padding: 10px;
+    background: brown; 
+   
+}
+
+@keyframes autoplay2 {  /*Þetta er að segja slideshowinu að hvernig það á að birtast og hverfa fékk þetta af þessari síðu https://www.w3.org/Style/Examples/007/slideshow.en.html#top */
+  0% {top: 100%}
+  4% {top: 0%}
+  33.33% {top: 0%}
+  37.33% {top: -100%}
+  100% {top: -100%}
+}
+
+.slideset2 > div:nth-child(1) {animation-delay: 0s}
+.slideset2 > div:nth-child(2) {animation-delay: 4s}
+.slideset2 > div:nth-child(3) {animation-delay: 8s}
+
 
 body{
     background-color: rgb(201, 212, 153);
+    
 }
 
 .burger{
