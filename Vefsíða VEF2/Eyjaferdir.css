@@ -63,6 +63,8 @@ nav{
   100% {top: -100%}
 }
 
+
+
 .slideset2 > div:nth-child(1) {animation-delay: 0s}
 .slideset2 > div:nth-child(2) {animation-delay: 4s}
 .slideset2 > div:nth-child(3) {animation-delay: 8s}
@@ -105,9 +107,23 @@ body{
 }
 
 .efnis2{
-    background-color: rgb(248, 227, 164);
+    
     padding: 15px;
     
+}
+
+@keyframes birta {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+header{
+    animation: 1.5s ease-out 0s 1 birta;
+    background: rgb(248, 227, 164);
 }
 
 .efnisy{
@@ -139,8 +155,7 @@ body{
     }
 
 svg{
-    position: absolute;
-    left: 150px;
+    display:hidden;
 
 }
 
@@ -355,5 +370,9 @@ svg{
         text-align: center;
     }
     
-    
+   svg{position: absolute;
+    left: 18px;
+    top :5px;}
 }
+
+
