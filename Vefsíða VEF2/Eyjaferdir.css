@@ -111,7 +111,7 @@ body{
     padding: 15px;
     
 }
-
+/*Þetta er keyframes "birta" sem lætur þetta koma niður SS y-ás í stað þess að koma á hlið byrjar að fara niður er svo þar alltaf*/
 @keyframes birta {
     0% {
       transform: translateY(-100%);
@@ -120,8 +120,8 @@ body{
       transform: translateY(0);
     }
 }
-
-header{
+/*Er hérna að skilgreina headerinn til þess að sýna background og hversu lengi það á að vera á leiðinni*/
+header{  
     animation: 1.5s ease-out 0s 1 birta;
     background: rgb(248, 227, 164);
 }
